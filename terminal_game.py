@@ -104,12 +104,15 @@ while current_scene != "end":
 		print("                                                  ?J!JGJ!Y5!.                                       ")
 		print("                                                                                                    ")
 		print("                                                                                                    ")
-		choice = input("To add this on you pokedex press 1")
+		choice = input("To add this on you pokedex press 1: \n")
 		if choice == "1":
 			current_scene = "end"
 			pokedex = "Dialga"
+			print("You have completed your adventure by capturing Dialga!")
+			print("Thank you for playing Pokemon Adventure!")
 		else: 
 			print("invalid choice try again")
+
 
 	elif current_scene == "Aceus":
 		print("congradulations you captured 'Aceus'")
@@ -177,16 +180,11 @@ while current_scene != "end":
 		print("                                         .^:          :!7!7~.                                       ")
 		print("                                                     .7!!^.                                         ")	
 		print("                                                                                                    ")
-		choice = input("To add this on you pokedex press 1")
+		choice = input("To add this on you pokedex press 1: \n")
 		if choice == "1":
 			current_scene = "end"
 			pokedex = "Arceus"
+			print("You have completed your adventure by capturing Arceus!")	
+			print("Thank you for playing Pokemon Adventure!")
 		else:
 			print("invalid choice try again")
-
-	elif current_scene == "end":
-		if pokedex == "Dialga":
-			print("You have completed your adventure by capturing Dialga!")
-		elif pokedex == "Arceus":
-			print("You have completed your adventure by capturing Arceus!")	
-		print("Thank you for playing Pokemon Adventure!")
